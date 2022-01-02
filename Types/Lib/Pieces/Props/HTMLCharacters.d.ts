@@ -1,0 +1,1 @@
+export type HTMLCharacters = [ white: string, black: string ];

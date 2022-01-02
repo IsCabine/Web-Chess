@@ -1,0 +1,44 @@
+$tile-1: #145F4B;
+$tile-2: #FAE8A8;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 96vh;
+    height: 96vh;
+
+    .file {
+        display: inline-block;
+    
+        .tile {
+            height: 12vh;
+            width: 12vh;
+        }
+    }
+
+    .file:nth-child(odd) {
+        .rank:nth-child(odd) {
+            background-color: $tile-1;
+        }
+    
+        .rank:nth-child(even) {
+            background-color: $tile-2;
+        }
+    }
+    
+    .file:nth-child(even) {
+        .rank:nth-child(odd) {
+            background-color: $tile-2;
+        }
+    
+        .rank:nth-child(even) {
+            background-color: $tile-1;
+        }
+    }
+}
