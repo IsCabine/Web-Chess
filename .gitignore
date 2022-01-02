@@ -2,11 +2,11 @@
 node_modules
 /dist
 
-**out**.js
-**out**.js.map
-**out**.css
-**out**.css.map
-**out**.css.map.gz
+/out/*.js
+/out/*.js.map
+./out/*.css
+/out/*.css.map
+/out/*.css.map.gz
 
 # local env files
 .env.local
