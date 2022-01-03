@@ -1,5 +1,6 @@
 import { Piece } from './Pieces/Piece';
 import { Position } from './Pieces/Props/Position';
+import { toLetter, toLetterIndex } from '../LetterAt';
 
 export class Board {
     constructor(
@@ -22,5 +23,9 @@ export class Board {
 
     public isEmpty(position: Position): boolean {
         return !this.pieces.has(position.toString());
+    }
+
+    public onBoard(position: Position): boolean {
+        return position.rank >= 1 && position.rank <= this.ranks && toLetterIndex(position.file) >= 1 && toLetterIndex < this.files;
     }
 }

@@ -5,25 +5,29 @@ import { Position } from './Props/Position';
 
 class Rook extends Piece {
     protected static chars = ['&#x2659;', '&#x265F;'];
-    public castleable: boolean = true;    
+    public castleable: boolean = true;
 
     public calculateAvailableMoves(): void {
         super.availableMoves = [];
 
-        for(let i = toLetterIndex(this.position.file); i > 0;)
-            if(this.addMoveIfAvailableAndPredicateBreak(toLetter(--i), this.position.rank))
+        const file: string = super.position.file;
+        const rank: number = super.position.rank;
+        const fileIndex: number = toLetterIndex(file);
+
+        for(let i = fileIndex; i > 0;)
+            if(this.addMoveIfAvailableAndPredicateBreak(toLetter(--i), rank))
                 break;
 
-        for(let i = toLetterIndex(this.position.file); i < 7;)
-            if(this.addMoveIfAvailableAndPredicateBreak(toLetter(++i), this.position.rank))
+        for(let i = fileIndex; i < super.board.files - 1;)
+            if(this.addMoveIfAvailableAndPredicateBreak(toLetter(++i), rank))
                 break;
 
-        for(let i = this.position.rank; i > 1;)
-            if(this.addMoveIfAvailableAndPredicateBreak(this.position.file, --i))
+        for(let i = rank; i > 1;)
+            if(this.addMoveIfAvailableAndPredicateBreak(file, --i))
                 break;
 
-        for(let i = this.position.rank; i < 7;)
-            if(this.addMoveIfAvailableAndPredicateBreak(this.position.file, ++i))
+        for(let i = rank; i < super.board.ranks;)
+            if(this.addMoveIfAvailableAndPredicateBreak(file, ++i))
                 break;
     }
 
