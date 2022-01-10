@@ -1,0 +1,194 @@
+[
+    {
+        "file": "a",
+        "rank": 1,
+        "piece": "rook",
+        "color": "white"
+    },
+    {
+        "file": "b",
+        "rank": 1,
+        "piece": "knight",
+        "color": "white"
+    },
+    {
+        "file": "c",
+        "rank": 1,
+        "piece": "bishop",
+        "color": "white"
+    },
+    {
+        "file": "d",
+        "rank": 1,
+        "piece": "queen",
+        "color": "white"
+    },
+    {
+        "file": "e",
+        "rank": 1,
+        "piece": "king",
+        "color": "white"
+    },
+    {
+        "file": "f",
+        "rank": 1,
+        "piece": "bishop",
+        "color": "white"
+    },
+    {
+        "file": "g",
+        "rank": 1,
+        "piece": "knight",
+        "color": "white"
+    },
+    {
+        "file": "h",
+        "rank": 1,
+        "piece": "rook",
+        "color": "white"
+    },
+    {
+        "file": "a",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "b",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "c",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "d",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "e",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "f",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "g",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "h",
+        "rank": 2,
+        "piece": "pawn",
+        "color": "white"
+    },
+    {
+        "file": "a",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "b",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "c",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "d",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "e",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "f",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "g",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "h",
+        "rank": 7,
+        "piece": "pawn",
+        "color": "black"
+    },
+    {
+        "file": "a",
+        "rank": 8,
+        "piece": "rook",
+        "color": "black"
+    },
+    {
+        "file": "b",
+        "rank": 8,
+        "piece": "knight",
+        "color": "black"
+    },
+    {
+        "file": "c",
+        "rank": 8,
+        "piece": "bishop",
+        "color": "black"
+    },
+    {
+        "file": "d",
+        "rank": 8,
+        "piece": "queen",
+        "color": "black"
+    },
+    {
+        "file": "e",
+        "rank": 8,
+        "piece": "king",
+        "color": "black"
+    },
+    {
+        "file": "f",
+        "rank": 8,
+        "piece": "bishop",
+        "color": "black"
+    },
+    {
+        "file": "g",
+        "rank": 8,
+        "piece": "knight",
+        "color": "black"
+    },
+    {
+        "file": "h",
+        "rank": 8,
+        "piece": "rook",
+        "color": "black"
+    }
+]

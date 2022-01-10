@@ -1,7 +1,7 @@
 import { Piece } from './Piece';
-import { Color } from './Props/Color';
+import { Color } from '../Props/Color';
 import { toLetterIndex, toLetter } from '../LetterAt';
-import { Position } from './Props/Position';
+import { Position } from '../Props/Position';
 
 class Rook extends Piece {
     protected static chars = ['&#x2659;', '&#x265F;'];

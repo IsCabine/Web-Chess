@@ -1,13 +1,9 @@
 $tile-1: #145F4B;
 $tile-2: #FAE8A8;
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 #board {
+    display: inline-block;
+    vertical-align: middle;
     margin-top: 2vh;
     margin-left: 2vw;
     width: 96vh;

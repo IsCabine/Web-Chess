@@ -1,5 +1,5 @@
 import { Piece } from './Piece';
-import { Position } from './Props/Position';
+import { Position } from '../Props/Position';
 import { toLetter, toLetterIndex } from '../LetterAt';
 
 class Bishop extends Piece {

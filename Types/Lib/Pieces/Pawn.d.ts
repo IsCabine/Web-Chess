@@ -1,6 +1,6 @@
 import { Piece } from './Piece';
-import { Color } from './Props/Color';
-import { Position } from './Props/Position';
+import { Color } from '../Props/Color';
+import { Position } from '../Props/Position';
 
 export class Pawn extends Piece {
     protected static chars = ['&#x2659;', '&#x265F;'];
@@ -36,12 +36,14 @@ export class Pawn extends Piece {
 
     public override move(to: Position): void {
         //#region: Removes passed pawn if move is en passant
-        let passedPawnPosition = new Position(this.position.rank, to.file);
-        if(!this.isEnemy(to) && 
-            this.isEnemy(passedPawnPosition) && 
-            this.board.getPiece(passedPawnPosition) instanceof Pawn
+        const passedPawnPosition = new Position(this.position.rank, to.file);
+        const passedPawn = super.board.getPieceFromPosition(passedPawnPosition);
+
+        if(!super.isEnemy(to) && 
+            super.isEnemy(passedPawnPosition) && 
+            passedPawn instanceof Pawn
         ) {
-            this.board.removePiece(passedPawnPosition);
+            this.board.removePiece(passedPawn);
         }
         //#endregion
 

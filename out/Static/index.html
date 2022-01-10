@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chess</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <link rel="stylesheet" type="text/css" href="/CSS/board.css" />
-    <script>
-        window.exports = new Object();
-        window.require = m => m === 'Vue' ? (globalThis || window || global || this)[m] : module.require(m);
+    <link rel="stylesheet" type="text/css" href="/CSS/layout.css" />
+    <script type="importmap">
+        {
+            "imports": {
+                "Vue": "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.esm.browser.js",
+                "../lib/LetterAt": "./lib/LetterAt.js"
+            }
+        }
     </script>
 </head>
 <body>
@@ -22,6 +26,6 @@
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

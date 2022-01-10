@@ -1,0 +1,8 @@
+@import 'board';
+@import 'panel';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

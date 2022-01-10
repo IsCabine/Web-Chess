@@ -1,24 +1,30 @@
 import { Piece } from './Pieces/Piece';
-import { Position } from './Pieces/Props/Position';
+import { Position } from './Props/Position';
 import { toLetter, toLetterIndex } from '../LetterAt';
 
 export class Board {
     constructor(
         public ranks: number = 10,
         public files: number = 10,
-        public pieces: Map<string, Piece> = new Map()
+        public pieces: Map<number, Piece> = new Map()
     ) {}
 
-    public getPiece(position: Position): Piece|null {
-        return this.pieces.get(position.toString()) || null;
+    public getPieceFromPosition(position: Position): Piece {
+        for(let piece of this.pieces.values())
+            if(piece.position.equals(position))
+                return piece;
     }
 
-    public setPiece(position: Position, piece: Piece): void {
+    public getPiece(id: number) {
+        return this.pieces.get(id)!;
+    }
+
+    public addPiece(piece: Piece): void {
         this.pieces.set(position.toString(), piece);
     }
 
-    public removePiece(position: Position): void {
-        this.pieces.delete(position.toString());
+    public removePiece(piece: Piece): void {
+        this.pieces.delete(piece.id);
     }
 
     public isEmpty(position: Position): boolean {
