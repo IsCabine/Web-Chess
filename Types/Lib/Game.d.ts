@@ -70,7 +70,7 @@ export class Game extends events.EventEmitter {
                 this.currentTurn = this.currentTurn == Color.WHITE ? Color.BLACK : Color.WHITE;
 
                 if(this.turnsSinceCaptureOrPawnMove > 75)
-                    this.emit('Allow Unconsensual Stalemate');
+                    this.emit('Forced Stalemate');
                 else if(this.turnsSinceCaptureOrPawnMove > 50)
                     this.emit('Allow Unconsensual Stalemate');
 
